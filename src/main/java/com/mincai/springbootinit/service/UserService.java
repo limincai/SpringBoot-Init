@@ -58,5 +58,5 @@ public interface UserService extends IService<User> {
      * @param userUpdateRequest 用户更新请求封装类
      * @return 返回更新成功后的用户展示层对象
      */
-    UserVO updateUser(UserUpdateRequest userUpdateRequest, HttpServletRequest request);
+    UserVO userUpdate(UserUpdateRequest userUpdateRequest, HttpServletRequest request);
 }

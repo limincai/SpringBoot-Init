@@ -110,7 +110,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     }
 
     @Override
-    public UserVO updateUser(UserUpdateRequest userUpdateRequest, HttpServletRequest request) {
+    public UserVO userUpdate(UserUpdateRequest userUpdateRequest, HttpServletRequest request) {
         // 1. 获取当前用户
         UserVO currentUserVO = this.getCurrentUserVO(request);
         // 2. 将需要更新用户字段拷贝到当前用户

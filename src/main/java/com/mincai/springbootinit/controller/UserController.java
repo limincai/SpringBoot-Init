@@ -99,10 +99,10 @@ public class UserController {
      */
     @GetMapping("/update")
     @NeedUserRole(UserConstant.USER_ROLE)
-    public Response<UserVO> updateUser(UserUpdateRequest userUpdateRequest, HttpServletRequest request) {
+    public Response<UserVO> userUpdate(UserUpdateRequest userUpdateRequest, HttpServletRequest request) {
         if (userUpdateRequest == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        return Response.ok(userService.updateUser(userUpdateRequest, request));
+        return Response.ok(userService.userUpdate(userUpdateRequest, request));
     }
 }

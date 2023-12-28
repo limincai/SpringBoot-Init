@@ -18,6 +18,20 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- redis-session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+
+
         <!-- mybatis-plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
